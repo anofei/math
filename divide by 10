@@ -1,0 +1,13 @@
+a = int(input())
+
+for i in range(a):
+    a, b, c = map(int,input().split())
+    math = (a * b + c)
+    ans = []
+    
+    while math > 0:
+        mod = math % 10
+        math = math // 10
+        ans.append(mod)
+        
+    print(sum(ans), end = ' ')
