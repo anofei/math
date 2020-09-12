@@ -1,13 +1,6 @@
-a = int(input())
-
-for i in range(a):
-    a, b, c = map(int,input().split())
-    math = (a * b + c)
-    ans = []
-    
-    while math > 0:
-        mod = math % 10
-        math = math // 10
-        ans.append(mod)
-        
-    print(sum(ans), end = ' ')
+sets = int(input())
+ans = []
+for i in range(sets):
+    lst_num = list(map(int,input().split()))
+    lst_num.sort()
+    print(lst_num[0], end = ' ')
